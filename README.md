@@ -79,7 +79,7 @@ Todos los enemigos causan daño al entrar en contacto con el jugador.
 * Obstáculo 1
 * Obstáculo 2
 
-Los obstáculos cuentan con efectos visuales para indicar peligro y dañan al jugador al colisionar con ellos.
+Los obstáculos cuentan con efectos visuales para indicar peligro y dañan al jugador al chocar con ellos.
 
 ---
 
@@ -138,10 +138,5 @@ Guiar a Jake a través de las distintas épocas temporales, superar los desafío
 
 ---
 
-## Estado del Proyecto
-
-### Jugabilidad
-
-✅ Completamente jugable
 
 

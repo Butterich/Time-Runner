@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dn3dkjtla43ds"]
 
-[ext_resource type="Texture2D" uid="uid://d0lpa2i0smdjm" path="res://assets/sprites/Time_Runner Portada.png" id="1_eno0h"]
+[ext_resource type="Texture2D" uid="uid://b6wnv8ttacnge" path="res://assets/Time_Runner_Start.png" id="1_4iifn"]
 [ext_resource type="Script" uid="uid://cy55ecd4a7ux6" path="res://scenes/StarScene.gd" id="2_4iifn"]
 
 [node name="StartScene" type="Control" unique_id=1747719158]
@@ -9,23 +9,22 @@ anchors_preset = 0
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1970999518]
 layout_mode = 0
-offset_left = -7.0
-offset_top = -8.0
-offset_right = 541.0
-offset_bottom = 650.0
-texture = ExtResource("1_eno0h")
+offset_left = -6.0
+offset_top = -2.0
+offset_right = 1153.0
+offset_bottom = 652.0
+texture = ExtResource("1_4iifn")
 expand_mode = 1
-stretch_mode = 6
 
 [node name="Button" type="Button" parent="." unique_id=1540715810]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 250.0
-offset_top = 150.0
-offset_right = 350.0
-offset_bottom = 250.0
+offset_left = 519.0
+offset_top = 185.0
+offset_right = 619.0
+offset_bottom = 285.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "																										

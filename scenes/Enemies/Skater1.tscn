@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cp3ka53uvay6p"]
+
+[ext_resource type="Script" uid="uid://oglengq60pfo" path="res://scripts/enemigo.gd" id="1_qmn0f"]
+[ext_resource type="Texture2D" uid="uid://c4v0xd0c7ngh0" path="res://assets/sprites/enemies/Presente/Attack.png" id="2_aa37f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ix3as"]
+size = Vector2(98.5, 152)
+
+[node name="Cavernicola" type="Area2D" unique_id=1559827290]
+scale = Vector2(0.35, 0.35)
+script = ExtResource("1_qmn0f")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2095108321]
+position = Vector2(98.27344, -49.5)
+rotation = -0.014063071
+scale = Vector2(6.932, 6)
+texture = ExtResource("2_aa37f")
+region_enabled = true
+region_rect = Rect2(142.61032, 5.9855213, 28.676788, 44.92694)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=675083245]
+position = Vector2(98, -48)
+shape = SubResource("RectangleShape2D_ix3as")

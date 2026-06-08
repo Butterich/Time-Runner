@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bgjskb3rsh4b1"]
+
+[ext_resource type="Script" uid="uid://bdev78ckotdth" path="res://scripts/obstalulo.gd" id="1_m6xqd"]
+[ext_resource type="Texture2D" uid="uid://boyvnmaaxy4m5" path="res://assets/sprites/four-seasons-tileset.png" id="2_h5x48"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d3kfu"]
+size = Vector2(26, 25)
+
+[node name="Obstalulo" type="Area2D" unique_id=867641958]
+collision_layer = 3
+script = ExtResource("1_m6xqd")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=681428339]
+position = Vector2(55, 55)
+scale = Vector2(2, 2)
+texture = ExtResource("2_h5x48")
+region_enabled = true
+region_rect = Rect2(128, 0, 16, 16)
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=1935255472]
+position = Vector2(55, 54.5)
+shape = SubResource("RectangleShape2D_d3kfu")

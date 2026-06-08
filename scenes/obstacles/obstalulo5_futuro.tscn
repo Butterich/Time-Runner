@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dmrj1l6q5gijl"]
+
+[ext_resource type="Script" uid="uid://bdev78ckotdth" path="res://scripts/obstalulo.gd" id="1_mvy55"]
+[ext_resource type="Texture2D" uid="uid://pbpj58vdfxgr" path="res://assets/sprites/Presente/industrial_zone_tileset/4 Animated objects/Screen1.png" id="2_dqlv5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d3kfu"]
+size = Vector2(42, 33)
+
+[node name="Obstalulo" type="Area2D" unique_id=867641958]
+script = ExtResource("1_mvy55")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=681428339]
+position = Vector2(55, 55)
+scale = Vector2(2, 2)
+texture = ExtResource("2_dqlv5")
+region_enabled = true
+region_rect = Rect2(96, 0, 31, 28.5)
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=1935255472]
+position = Vector2(56, 58.5)
+shape = SubResource("RectangleShape2D_d3kfu")

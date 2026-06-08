@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://derajc1xex38g"]
+
+[ext_resource type="Script" uid="uid://oglengq60pfo" path="res://scripts/enemigo.gd" id="1_pykwa"]
+[ext_resource type="Texture2D" uid="uid://b8jdn52wnj6q2" path="res://assets/sprites/enemies/Presente/enemies_for_platformer_pixel_art/Walk.png" id="2_pykwa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ix3as"]
+size = Vector2(98.5, 152)
+
+[node name="Cavernicola" type="Area2D" unique_id=1559827290]
+scale = Vector2(0.35, 0.35)
+script = ExtResource("1_pykwa")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2095108321]
+position = Vector2(98.27344, -49.5)
+rotation = -0.014063071
+scale = Vector2(6.932, 6)
+texture = ExtResource("2_pykwa")
+region_enabled = true
+region_rect = Rect2(142.61032, 15.419655, 28.791748, 35.492805)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=675083245]
+position = Vector2(98, -48)
+shape = SubResource("RectangleShape2D_ix3as")

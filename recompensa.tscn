@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bw1mckasw8sqw"]
+
+[ext_resource type="Script" uid="uid://dqkfs1n7qhjs1" path="res://assets/sprites/recompensas/recompensa.gd" id="1_gbia5"]
+[ext_resource type="Texture2D" uid="uid://n0khlpvekiqo" path="res://assets/sprites/recompensas/recompensas 1.png" id="1_wv1cs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gbia5"]
+size = Vector2(16.25, 17)
+
+[node name="Recompensa" type="Area2D" unique_id=1498796775]
+collision_layer = 4
+script = ExtResource("1_gbia5")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=322074993]
+position = Vector2(-828.00006, -48.999996)
+scale = Vector2(1.806, 1.5)
+texture = ExtResource("1_wv1cs")
+region_enabled = true
+region_rect = Rect2(0, 47, 23, 23)
+
+[node name="Collision" type="CollisionShape2D" parent="." unique_id=2027169343]
+position = Vector2(-827, -47)
+shape = SubResource("RectangleShape2D_gbia5")

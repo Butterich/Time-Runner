@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://400abn8ykg7h"]
+
+[ext_resource type="Script" uid="uid://bc4w1ans38he8" path="res://scripts/game_over.gd" id="1_7gsdj"]
+
+[node name="Gameover" type="Control" unique_id=1565903901]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_7gsdj")
+
+[node name="Label" type="Label" parent="." unique_id=1675623586]
+custom_minimum_size = Vector2(450, 220)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "GAME OVER
+
+"
+
+[node name="Button" type="Button" parent="." unique_id=65974314]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 220.0
+offset_right = 700.0
+offset_bottom = 420.0
+text = "REINTENTAR?"

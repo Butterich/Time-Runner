@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bm4kcv8174ohk"]
+
+[ext_resource type="Script" uid="uid://oglengq60pfo" path="res://scripts/enemigo.gd" id="1_ro2j3"]
+[ext_resource type="Texture2D" uid="uid://dk72ful3awt87" path="res://assets/sprites/enemies/cavernicola/Cavemen.png" id="2_ro2j3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ix3as"]
+size = Vector2(98.5, 152)
+
+[node name="Cavernicola" type="Area2D" unique_id=1559827290]
+rotation = -0.0040040803
+scale = Vector2(0.4, 0.4)
+script = ExtResource("1_ro2j3")
+velocidad = 40.0
+distancia_patrulla = 80.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2095108321]
+position = Vector2(98.27344, -49.5)
+scale = Vector2(6.932, 6)
+texture = ExtResource("2_ro2j3")
+region_enabled = true
+region_rect = Rect2(10, 16, 45, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=675083245]
+position = Vector2(98, -48)
+shape = SubResource("RectangleShape2D_ix3as")

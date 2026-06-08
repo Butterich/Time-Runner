@@ -1,0 +1,203 @@
+[gd_scene format=3 uid="uid://ch583t4byahhb"]
+
+[ext_resource type="PackedScene" uid="uid://cl4gkftt7vquu" path="res://scenes/player/player.tscn" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://dhkhph1wa7ces" path="res://juego.gd" id="1_5vw27"]
+[ext_resource type="Script" uid="uid://byrd85v5kvckm" path="res://scripts/world_manager.gd" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cu12fsgc3wbyy" path="res://scenes/world/Pasadoworld.tscn" id="3_272bh"]
+[ext_resource type="PackedScene" uid="uid://byug3hp1rcxco" path="res://scenes/world/Presenteworld.tscn" id="4_5vw27"]
+[ext_resource type="PackedScene" uid="uid://b58a517g4x65k" path="res://scenes/world/Futuroworld.tscn" id="5_kek77"]
+[ext_resource type="Script" uid="uid://ejomctoxslau" path="res://scripts/hud.gd" id="6_7mycd"]
+[ext_resource type="PackedScene" uid="uid://bw1mckasw8sqw" path="res://recompensa.tscn" id="7_272bh"]
+
+[node name="Juego" type="Node2D" unique_id=733953523]
+script = ExtResource("1_5vw27")
+
+[node name="Player" parent="." unique_id=1569586833 instance=ExtResource("1_0xm2m")]
+position = Vector2(-2330, -295)
+
+[node name="Worldcontainer" type="Node2D" parent="." unique_id=109100586]
+position = Vector2(-1095, -601)
+script = ExtResource("2_h2yge")
+past_world = ExtResource("3_272bh")
+present_world = ExtResource("4_5vw27")
+future_world = ExtResource("5_kek77")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1029999818]
+script = ExtResource("6_7mycd")
+
+[node name="VidasLabel" type="Label" parent="HUD" unique_id=1413483927]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "❤️ x5"
+
+[node name="TutorialLabel" type="Label" parent="HUD" unique_id=1317926813]
+custom_minimum_size = Vector2(2, 2)
+offset_left = 100.0
+offset_top = 150.0
+offset_right = 364.0
+offset_bottom = 303.0
+text = "
+
+
+					ESPACIO: saltar
+					1: Pasado | 2: 					Presente | 3: Futuro
+					Evita enemigos y obstáculos"
+
+[node name="Scorelabel" type="Label" parent="HUD" unique_id=790428518]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=426819719]
+autoplay = true
+
+[node name="Recompensa" parent="." unique_id=1498796775 instance=ExtResource("7_272bh")]
+position = Vector2(758, -254)
+
+[node name="Sprite2D" type="Sprite2D" parent="Recompensa" unique_id=1416550041]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Recompensa" unique_id=578822366]
+
+[node name="Recompensa2" parent="." unique_id=47076625 instance=ExtResource("7_272bh")]
+position = Vector2(1254, -16)
+
+[node name="Sprite" parent="Recompensa2" index="0" unique_id=322074993]
+position = Vector2(-829.99994, -235.99998)
+region_rect = Rect2(23, 147, 23, 23)
+
+[node name="Collision" parent="Recompensa2" index="1" unique_id=2027169343]
+position = Vector2(-2022, -209)
+
+[node name="Sprite2D" type="Sprite2D" parent="Recompensa2" unique_id=1994807714]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Recompensa2" unique_id=2126281658]
+
+[node name="Recompensa3" parent="." unique_id=369887415 instance=ExtResource("7_272bh")]
+position = Vector2(-501, -4)
+
+[node name="Sprite" parent="Recompensa3" index="0" unique_id=322074993]
+position = Vector2(-744.99994, -186.99998)
+region_rect = Rect2(49, 0, 23, 23)
+
+[node name="Collision" parent="Recompensa3" index="1" unique_id=2027169343]
+position = Vector2(-750, -189)
+
+[node name="Sprite2D" type="Sprite2D" parent="Recompensa3" unique_id=2071868243]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Recompensa3" unique_id=407022115]
+
+[node name="Recompensa4" parent="." unique_id=293795849 instance=ExtResource("7_272bh")]
+position = Vector2(5204, -125)
+
+[node name="Sprite" parent="Recompensa4" index="0" unique_id=322074993]
+position = Vector2(-829.99994, -195.99998)
+region_rect = Rect2(96, 216, 23, 23)
+
+[node name="Collision" parent="Recompensa4" index="1" unique_id=2027169343]
+position = Vector2(-823, -196)
+
+[node name="Sprite2D" type="Sprite2D" parent="Recompensa4" unique_id=1824637171]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Recompensa4" unique_id=874311459]
+
+[node name="Recompensa5" parent="." unique_id=1099663125 instance=ExtResource("7_272bh")]
+position = Vector2(2754, -363)
+
+[node name="Sprite" parent="Recompensa5" index="0" unique_id=322074993]
+position = Vector2(-740.00006, -109)
+region_rect = Rect2(46, 240, 23, 23)
+
+[node name="Collision" parent="Recompensa5" index="1" unique_id=2027169343]
+position = Vector2(-739, -107)
+
+[node name="Sprite2D" type="Sprite2D" parent="Recompensa5" unique_id=799716717]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Recompensa5" unique_id=2014386291]
+
+[node name="Recompensa6" parent="." unique_id=892964620 instance=ExtResource("7_272bh")]
+position = Vector2(3570, -113)
+
+[node name="Sprite" parent="Recompensa6" index="0" unique_id=322074993]
+position = Vector2(-828.00006, -249.99997)
+region_rect = Rect2(143, 145, 23, 23)
+
+[node name="Collision" parent="Recompensa6" index="1" unique_id=2027169343]
+position = Vector2(-827, -248)
+
+[node name="Sprite2D" type="Sprite2D" parent="Recompensa6" unique_id=1690497685]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Recompensa6" unique_id=212634660]
+
+[node name="Recompensa7" parent="." unique_id=343052525 instance=ExtResource("7_272bh")]
+position = Vector2(1832, -125)
+
+[node name="Sprite" parent="Recompensa7" index="0" unique_id=322074993]
+position = Vector2(-829.38446, -52.625)
+scale = Vector2(1.8595188, 1.6195654)
+region_rect = Rect2(72, 120, 23, 23)
+
+[node name="Sprite2D" type="Sprite2D" parent="Recompensa7" unique_id=1924110230]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Recompensa7" unique_id=1294678288]
+
+[node name="Recompensa8" parent="." unique_id=1767707309 instance=ExtResource("7_272bh")]
+position = Vector2(3829, -478)
+
+[node name="Sprite" parent="Recompensa8" index="0" unique_id=322074993]
+position = Vector2(4.999941, 6)
+region_rect = Rect2(25, 166, 23, 23)
+
+[node name="Collision" parent="Recompensa8" index="1" unique_id=2027169343]
+position = Vector2(2, 6)
+
+[node name="Sprite2D" type="Sprite2D" parent="Recompensa8" unique_id=2042393338]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Recompensa8" unique_id=1820039728]
+
+[node name="Recompensa9" parent="." unique_id=1034775330 instance=ExtResource("7_272bh")]
+position = Vector2(2454, -57)
+
+[node name="Sprite" parent="Recompensa9" index="0" unique_id=322074993]
+position = Vector2(-846.0002, -402.00006)
+region_rect = Rect2(218, 120, 23, 23)
+
+[node name="Collision" parent="Recompensa9" index="1" unique_id=2027169343]
+position = Vector2(-848, -404)
+
+[node name="Sprite2D" type="Sprite2D" parent="Recompensa9" unique_id=1725902035]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Recompensa9" unique_id=444136749]
+
+[node name="Recompensa10" parent="." unique_id=140255769 instance=ExtResource("7_272bh")]
+position = Vector2(57, -202)
+
+[node name="Sprite" parent="Recompensa10" index="0" unique_id=322074993]
+position = Vector2(-828, -18.999998)
+region_rect = Rect2(120, 169, 23, 23)
+
+[node name="Collision" parent="Recompensa10" index="1" unique_id=2027169343]
+position = Vector2(371, -52)
+
+[node name="Sprite2D" type="Sprite2D" parent="Recompensa10" unique_id=1479250216]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Recompensa10" unique_id=312407504]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=60492633]
+
+[node name="FinalText" type="Label" parent="CanvasLayer" unique_id=1679947234]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[editable path="Recompensa2"]
+[editable path="Recompensa3"]
+[editable path="Recompensa4"]
+[editable path="Recompensa5"]
+[editable path="Recompensa6"]
+[editable path="Recompensa7"]
+[editable path="Recompensa8"]
+[editable path="Recompensa9"]
+[editable path="Recompensa10"]
